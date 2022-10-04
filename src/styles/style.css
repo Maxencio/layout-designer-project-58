@@ -29,6 +29,19 @@
 Выравнивание по центру
 Отступы по 100 пикселей сверху и снизу
 **/
+:root {
+    --white: #fff;
+    --off-white: #d7ccc0;
+    --light: #f5f4f0;
+    --prime: #fe8a02;
+    --primeDark: #42413c;
+    --dark: #2a2626;
+    --off-dakr: #908d8b;
+    --brown: #b09a81;
+    --blue: #1085c5;
+    --font-size: 16px;
+    --line-height: 1.6em;
+}
 
 .hello {
   display: block;
@@ -36,27 +49,25 @@
   color: #fff;
 }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url(/src/fonts/Open_Sans/OpenSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: "Neucha";
-  src: url(/src/fonts/Neucha/Neucha-Regular.ttf);
-}
-
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1.6 em;
+  line-height: 1.6em;
   color: #2A2626;
 }
 
-:root {
+.Topic {
+    font-family: 'Neucha', sans-serif;
+    position: relative;
+}
+.orange {
+    color: var(--prime);
+}
 
+.text-black {
+    color: var(--dark);
 }
 
 .header-section-1110px {
@@ -64,10 +75,11 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
+.Petrova {
+    margin-top: 30px;
+}
 h1,h2,h3,h4,h5,h6 {
-    line-height: 1.2 em;
-    font-family: "Open Sans", sans-serif;
+    line-height: 1.2em;
 }
 
 h1 {
@@ -104,7 +116,7 @@ h3 {
 
 .img-main {
     position: absolute;
-    background-size: cover
+    background-size: cover;
     height: 525px;
     top: 55px;
     right: -270px;
@@ -124,27 +136,42 @@ h3 {
 .left {
     display:flex;
     flex-direction:column;
-    flex-basis: 100%;
     flex: 1;
 }
 
 .right {
     display:flex;
     flex-direction:column;
-    flex-basis: 100%;
     flex: 1;
 }
 
 .buttonForHeader {
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     border: none;
     color: white;
-    background-color:#FE8A02;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    background-color: var(--prime);
+    padding: 12px 24px;
     margin-left: 570px;
         margin-top: 30px;
+}
+
+.info-video {
+
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.info-video-youtube {
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.Petrova {
+    font-family: 'Open Sans', sans-serif;
 }
